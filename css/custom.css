@@ -1,0 +1,276 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0, 0, 0, 0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0%, rgba(0, 0, 0, 0.00)), color-stop( 100%, rgba(0, 0, 0, 0.00)));
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.custom {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    background-color: black;
+}
+
+.custom p {
+    font-size: 10pt;
+}
+
+.navbar {
+    margin: 0 !important;
+    background-color: white !important;
+}
+
+#myVideo {
+    position: relative;
+    top: 0;
+    min-width: 100%;
+}
+
+.mast-head {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#portfolio .container-fluid {
+    max-width: 1920px
+}
+
+#portfolio .container-fluid .portfolio-box {
+    position: relative;
+    display: block
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(244, 98, 58, .9);
+    transition: opacity .25s ease;
+    text-align: center
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .85rem;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+    font-size: 1.2rem
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay-katalog {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #3a3a3a;
+}
+
+.katalog:hover .overlay-katalog {
+    opacity: .8;
+}
+
+.act-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-decoration: none;
+    transition: ease all .3s;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    box-shadow: 0px 5px 20px #6e6e6e;
+}
+
+.btn-ripple {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-ripple::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 100%;
+    width: 50%;
+    background-color: #000;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease-in-out 1s;
+    transform: scale(5, 5);
+}
+
+.btn-ripple:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: .2;
+    transition: 0s;
+    transform: scale(0, 0);
+}
+
+.tokped {
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/img/marketplace/tokopedia-grey.png');
+    background-size: cover;
+    align-items: center;
+    transition: .5s;
+    margin: auto;
+}
+
+.tokped:hover {
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/img/marketplace/tokopedia.png');
+    background-size: cover;
+    align-items: center;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.shopee {
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/img/marketplace/shopee-grey.png');
+    background-size: cover;
+    align-items: center;
+    transition: .5s;
+    margin: auto;
+}
+
+.shopee:hover {
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/img/marketplace/shopee.png');
+    background-size: cover;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bukalapak {
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/img/marketplace/bukalapak-grey.png');
+    background-size: cover;
+    align-items: center;
+    transition: .5s;
+    margin: auto;
+}
+
+.bukalapak:hover {
+    width: 100px;
+    cursor: pointer;
+    height: 100px;
+    background-image: url('../assets/img/marketplace/bukalapak.png');
+    background-size: cover;
+    align-items: center;
+    transition: .5s;
+}
+
+.card {
+    position: relative;
+    z-index: -1;
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    color: white;
+}
+
+.title {
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(199, 199, 199);
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 20px 40px;
+    /* background-color: #4E4DED; */
+    color: black !important;
+    border: 0;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10), 0 6px 6px rgba(0, 0, 0, 0.05);
+    animation: shadow-pulse 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
+    }
+}
+
+.card {
+    border-radius: 0px;
+}
