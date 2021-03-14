@@ -247,11 +247,6 @@ body {
     color: white;
 }
 
-.title {
-    padding-bottom: 10px;
-    border-bottom: 3px solid rgb(199, 199, 199);
-}
-
 .cta-button {
     margin-top: 20px;
     padding: 20px 40px;
