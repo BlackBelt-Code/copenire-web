@@ -23,7 +23,7 @@ new fullpage('#fullpage', {
     anchors : ['video', 'kategory', 'buying'],
     fixedElements: '#header, .footer',
     normalScrollElements: '.footer',
-    // autoScrolling: false,
+    autoScrolling: false,
     //options here
     // autoScrolling: true,
     // scrollHorizontally: true,
