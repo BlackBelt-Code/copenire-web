@@ -109,7 +109,6 @@ $(window).on('load', function(){
 	},8000);
 });
 
-const restart = document.querySelector(".button-restart");
 const logoAnimation = anime.timeline({ 
   autoplay: true,
   delay: 100
@@ -147,5 +146,3 @@ logoAnimation.add({
   easing: 'easeOutExpo',
   offset: 1000
 })
-
-restart.addEventListener("click", () => logoAnimation.restart());
