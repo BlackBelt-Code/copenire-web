@@ -17,19 +17,19 @@ if ($(".smart-scroll").length > 0) {
 }
 
 new fullpage('#fullpage', {
-  menu: '#menu',
-  // navigationPosition: 'right',
-  scrollingSpeed: 700,
-  anchors: ['video', 'kategory', 'buying'],
-  fixedElements: '#header, .footer',
-  normalScrollElements: '.footer',
-  // autoScrolling: false,
-  //options here
-  // autoScrolling: true,
-  // scrollHorizontally: true,
-  onLeave: function (origin, destination, direction) {
-  },
-  onSlideLeave: function (section, origin, destination, direction) { }
+    menu: '#menu',
+    // navigationPosition: 'right',
+    scrollingSpeed: 700,
+    anchors : ['video', 'kategory', 'buying'],
+    fixedElements: '#header, .footer',
+    normalScrollElements: '.footer',
+    autoScrolling: false,
+    //options here
+    // autoScrolling: true,
+    // scrollHorizontally: true,
+    onLeave: function(origin, destination, direction){
+    },
+    onSlideLeave: function(section, origin, destination, direction){}
 });
 
 // Wrap every letter in a span
